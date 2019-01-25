@@ -164,7 +164,7 @@ verbs other than ``GET``:
 
         count: int = 0
 
-        async def get(self, request: Request) -> Response
+        async def get(self, request: Request) -> Response:
             return self.json({'count': self.count})
 
         async def post(self, request: Request) -> Response:
